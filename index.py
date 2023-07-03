@@ -309,13 +309,145 @@ car = {
 # print(calculate_BMI(1.60,30))
 # print(calculate_BMI(2.3,50))
  
-def list_children( *children):
-    return children[-1]
+# def list_children( *children):
+#     return children[-1]
 
 
-print(list_children('jambul', 'kiwi', 'lime', 'mango', 'nectarine', 'orange', 'papaya',
-    'quince', 'raspberry', 'strawberry', 'tangerine', 'ugli fruit', 'vanilla',
-    'watermelon', 'xigua', 'yangmei', 'zucchini'))
+# print(list_children('jambul', 'kiwi', 'lime', 'mango', 'nectarine', 'orange', 'papaya',
+#     'quince', 'raspberry', 'strawberry', 'tangerine', 'ugli fruit', 'vanilla',
+#     'watermelon', 'xigua', 'yangmei', 'zucchini'))
 
 
-print(list_children('crownie',"maley",'eric'))
+# print(list_children('crownie',"maley",'eric'))
+
+
+# A Quick Recap
+# Let's quickly summarize what we've covered. In this tutorial, we've learned:
+
+# how to define functions,
+# how to call functions,
+# how to pass in arguments to a function,
+# how to create functions with default and variable number of arguments, and
+# how to create a function with return value(s).
+
+
+# def display_name( yourName="a" ): 
+#     return "hello" +  " "+ yourName[-1]
+
+# print(display_name())
+
+# def display_greet(greet):
+#     return greet
+    
+# print(display_greet("good morning"))
+# print(display_greet("good afteroon "))
+
+
+
+# lambda function
+
+# A lambda function is a small anonymous function.
+# A lambda function can take any number of arguments, but can only have one expression.
+
+# Syntax
+# lambda arguments : expression
+
+# display_greet = lambda greet,name : greet + " "+ name
+
+# print(display_greet("good morning" ,'kofi'))
+# print(display_greet("good afternoon",'ama'))
+
+
+
+# def cal_age(currentYear,yearBorn):
+#     age = currentYear - yearBorn
+#     return age
+
+# cal_age()
+
+# x = lambda currentYear,yearBorn :   currentYear - yearBorn
+
+# x()
+
+
+
+
+# def myfunc(n):
+#   return lambda a : a * n
+
+# mydoubler = myfunc(2)
+
+# print(mydoubler(11))
+
+# print(x+ y)
+# print(x - y)
+# print(x / y)
+# print(x * y)
+# print(x // y)
+# print(x ** y)
+
+
+# Python Assignment Operators
+
+# y = 50 
+# x = 10
+# y = 50
+ 
+# x+=y
+# x-=y  # x = x - y
+# x*=y  # x = x * y
+# x/=y  # x = x / y
+# x **=y  # x = x ** y
+# x %=y  # x = x % y
+
+# y += x #y = y+x
+# print(y)
+
+x = 90
+y = 50
+
+# print(x == y) #Equal
+# print(x != y) #not Equal #output boolean
+# print(x > y) #Greater than #output boolean
+# print(x < y) #less than #output boolean
+
+# print(5 > 10 or  10 < 10)
+  
+
+y = 40 
+x = 19
+const =18 
+
+# if (x > const):
+#     print("Enter club")
+# else:
+#     print("go home")
+
+
+
+email_bd  = "kofikumi64@gmail.com"
+password_bd  = "passme123"
+
+input_email = "kofikumi64@gmail.com"
+input_password  = "passme1233"
+ 
+
+# if (input_email == email_bd):
+#     print("email is correct proceed")
+# else:
+#     print("email is not correct try again")
+
+# if (input_password == password_bd):
+#     print("password is correct proceed")
+# else:
+#     print("password is not correct try again")
+
+
+
+if (input_email == email_bd and input_password ==password_bd):
+    print("login")
+else:
+    print("not correct try again")
+
+
+if Else
