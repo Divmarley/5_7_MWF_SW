@@ -497,33 +497,26 @@ input_username = "@marley2"
 #   print("i is no longer less than 6")
 
 personalInfor = [
-  {
-    "name": "marley",
-    "age": 20,
-    "address": {
-      "country": "Ghana",
-      "zip_code": "+233",
-      "phoneNumbers": [
-        7777777, 
-        900000
-        ],
+    {
+        "name": "marley",
+        "age": 20,
+        "address": {
+            "country": "Ghana",
+            "zip_code": "+233",
+            "phoneNumbers": [7777777, 900000],
+        },
+        "gender": "male",
+        "occupation": ("developer"),
     },
-    "gender": "male",
-    "occupation": ("developer"),
-  },
 ]
 
- 
 
 # personalInfor[0]['occupation'] ="dancer"
 # print(personalInfor)
 
 
- 
-
 # personalInfor[0]["address"]["phoneNumbers"] = tuple(personalInfor[0]["address"]["phoneNumbers"])
 # print(personalInfor)
-
 
 
 # r ={"phoneNumbers": [7777777,  900000 ]}
@@ -532,54 +525,70 @@ personalInfor = [
 # print(r)
 
 
-
 # class and objects
 print()
 
 
-class Person():
-  # properties
-  def __init__(self,paraName,paraColor,pheight,pGender):
-    self.name = paraName
-    self.color= paraColor
-    self.height=pheight
-    self.gender = pGender
+# class Person():
+#   # properties
+#   def __init__(self,paraName,paraColor,pheight,pGender):
+#     self.name = paraName
+#     self.color= paraColor
+#     self.height=pheight
+#     self.gender = pGender
 
-  # method
-  def can_talk(self):
-    return 'i can talk'
+#   # method
+#   def can_talk(self):
+#     return 'i can talk'
 
-obj = Person("marley","red",5.99,"male")
-obj2 = Person("ama","yellow",2.99,"female")
-obj3 = Person()
-obj4 = Person()
-
-
-
-print(obj.name)
-print(obj.color)
-print(obj.height)
-print(obj.gender)
-print("=======================================")
+# obj = Person("marley","red",5.99,"male")
+# obj2 = Person("ama","yellow",2.99,"female")
+# obj3 = Person()
+# obj4 = Person()
 
 
-print(obj2.name)
-print(obj2.color)
-print(obj2.height)
-print(obj2.gender)
+# print(obj.name)
+# print(obj.color)
+# print(obj.height)
+# print(obj.gender)
+# print("=======================================")
+
+
+# print(obj2.name)
+# print(obj2.color)
+# print(obj2.height)
+# print(obj2.gender)
+
+
+class Human:
+    # properties
+    def __init__(self, name, color, height):
+        self.name = name
+        self.color = color
+        self.height = height
+
+    # method
+    def can_talk(self):
+        return f"{self.name} can talk"
+    
+    # create method for email using a default domaim marley@gmail.com 
+    # or kwame@gmail.com
+
+
+firstHuman = Human("marley", "red", 2.00)
+print("firstHuman name:", firstHuman.name)
+print("firstHuman color:", firstHuman.color)
+print("firstHuman color:", firstHuman.color)
+print("firstHuman can_talk:", firstHuman.can_talk())
+
+secHuman = Human("kwame", "black", 10.55)
+print("secHuman:", secHuman.name)
+print("secHuman can_talk:", secHuman.can_talk())
+
  
+class Animal(Human):
+    pass
 
+obj1 = Animal('kiki','red',6.7)
 
-
-
-
-
-
-
-
-def display_name(name):
-  return name
-
-print(display_name)
-
- 
+print(obj1.can_talk())
