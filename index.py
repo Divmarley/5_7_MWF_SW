@@ -362,20 +362,20 @@ car = {"name": "BMW", "color": "red"}
 # y += x #y = y+x
 # print(y)
 
-x = 90
-y = 50
+# x = 90
+# y = 50
 
-# print(x == y) #Equal
-# print(x != y) #not Equal #output boolean
-# print(x > y) #Greater than #output boolean
-# print(x < y) #less than #output boolean
+# # print(x == y) #Equal
+# # print(x != y) #not Equal #output boolean
+# # print(x > y) #Greater than #output boolean
+# # print(x < y) #less than #output boolean
 
-# print(5 > 10 or  10 < 10)
+# # print(5 > 10 or  10 < 10)
 
 
-y = 40
-x = 19
-const = 18
+# y = 40
+# x = 19
+# const = 18
 
 # if (x > const):
 #     print("Enter club")
@@ -383,15 +383,15 @@ const = 18
 #     print("go home")
 
 
-email_bd = "kofikumi64@gmail.com"
-password_bd = "passme123"
-phone_db = "0244404044"
-username_db = "@marley"
+# email_bd = "kofikumi64@gmail.com"
+# password_bd = "passme123"
+# phone_db = "0244404044"
+# username_db = "@marley"
 
-input_email = "kofikumi64@gmail.comd"
-input_password = "passme123"
-input_phone = "0244404044"
-input_username = "@marley2"
+# input_email = "kofikumi64@gmail.comd"
+# input_password = "passme123"
+# input_phone = "0244404044"
+# input_username = "@marley2"
 
 # if (input_email == email_bd):
 #     print("email is correct proceed")
@@ -496,19 +496,19 @@ input_username = "@marley2"
 # else:
 #   print("i is no longer less than 6")
 
-personalInfor = [
-    {
-        "name": "marley",
-        "age": 20,
-        "address": {
-            "country": "Ghana",
-            "zip_code": "+233",
-            "phoneNumbers": [7777777, 900000],
-        },
-        "gender": "male",
-        "occupation": ("developer"),
-    },
-]
+# personalInfor = [
+#     {
+#         "name": "marley",
+#         "age": 20,
+#         "address": {
+#             "country": "Ghana",
+#             "zip_code": "+233",
+#             "phoneNumbers": [7777777, 900000],
+#         },
+#         "gender": "male",
+#         "occupation": ("developer"),
+#     },
+# ]
 
 
 # personalInfor[0]['occupation'] ="dancer"
@@ -526,7 +526,6 @@ personalInfor = [
 
 
 # class and objects
-print()
 
 
 # class Person():
@@ -560,35 +559,181 @@ print()
 # print(obj2.gender)
 
 
-class Human:
-    # properties
-    def __init__(self, name, color, height):
-        self.name = name
-        self.color = color
-        self.height = height
+# class Human:
+#     # properties
+#     def __init__(self, name, color, height):
+#         self.name = name
+#         self.color = color
+#         self.height = height
 
-    # method
-    def can_talk(self):
-        return f"{self.name} can talk"
-    
-    # create method for email using a default domaim marley@gmail.com 
-    # or kwame@gmail.com
+#     # method
+#     def can_talk(self):
+#         return f"{self.name} can talk"
+
+#     # create method for email using a default domaim marley@gmail.com
+#     # or kwame@gmail.com
 
 
-firstHuman = Human("marley", "red", 2.00)
-print("firstHuman name:", firstHuman.name)
-print("firstHuman color:", firstHuman.color)
-print("firstHuman color:", firstHuman.color)
-print("firstHuman can_talk:", firstHuman.can_talk())
+# firstHuman = Human("marley", "red", 2.00)
+# print("firstHuman name:", firstHuman.name)
+# print("firstHuman color:", firstHuman.color)
+# print("firstHuman color:", firstHuman.color)
+# print("firstHuman can_talk:", firstHuman.can_talk())
 
-secHuman = Human("kwame", "black", 10.55)
-print("secHuman:", secHuman.name)
-print("secHuman can_talk:", secHuman.can_talk())
+# secHuman = Human("kwame", "black", 10.55)
+# print("secHuman:", secHuman.name)
+# print("secHuman can_talk:", secHuman.can_talk())
+
+
+# class Animal(Human):
+#     pass
+
+# obj1 = Animal('kiki','red',6.7)
+
+# print(obj1.can_talk())
+
+
+# recap
+"""
+
+Python Classes/Objects
+Python is an object oriented programming language.
+
+Almost everything in Python is an object, with its properties and methods.
+
+A Class is like an object constructor, or a "blueprint" for creating objects.
+
+
+
+
+
+"""
+
+
+# class Car:
+#     # properties
+#     def __init__(self, Pname, Pcolor, Pmodel, Pyear):
+#         self.name = Pname
+#         self.color = Pcolor
+#         self.model = Pmodel
+#         self.year = Pyear
+
+#     # methods
+#     def can_drive(self):
+#         return f'{self.name} i can drive or move'
+
+
+# class Plane(Car):
+#     pass
+
+# Plane()
+
+# x = Car("BMW",'red','c230',2023)
+# print(x.name)
+# print(x.can_drive())
+
+# y = Car()
+# print(y.name)
+
+
+"""
+The __init__() Function
+The examples above are classes and objects in their simplest form, and are not really useful in real life applications.
+
+To understand the meaning of classes we have to understand the built-in __init__() function.
+
+All classes have a function called __init__(), which is always executed when the class is being initiated.
+
+Use the __init__() function to assign values to object properties, or other operations that are necessary to do when the object is being created:
+"""
+
+
+# def xzy(name):
+#     data = name
+#     return data
+
+# print(xzy("kofi"))
+# print(xzy("ama"))
+
+
+"""
+Python Inheritance
+Inheritance allows us to define a class that 
+inherits all the methods and properties from another class.
+
+Parent class is the class being inherited from, also called base class.
+
+Child class is the class that inherits from another class, also called derived class.
+
+
+"""
+
+
+# class Person:
+#   def __init__(self, fname, lname):
+#     self.firstname = fname
+#     self.lastname = lname
+
+#   def printname(self):
+#     print(self.firstname, self.lastname)
+
+# Use the Person class to create an object, and then execute the printname method:
+
+# x = Person("John", "Doe")
+# # x.printname()
+
+
+# class Student(Person):
+#     def __init__(self,fname, lname,cr):
+#        self.classRoom = cr
+
+
+# stu1 =Student('kwame','sika',"one")
+# print(stu1.classRoom)
+
+
+# Python Scope -
+# A variable is only available from inside the region it is created.
+# This is called scope.
+
+
+# def my_scope():
+#     global x
+#     x = 100
+# my_scope()
+# print(x)
+
+
+
+# ghana
+
+# def ghana():
+#     global g
+#     g ="GOLD"
+#     print(g)
+#     print("ghana wants: " ,o)
+
+# ghana()
+
+
+# def naija():
+#     global o
+#     o ="OIL"
+#     print(o)
+#     print("naija wants: " ,g)
+
+# naija()
+
+
+
+# import datetime as dt
+
+
+# day = dt.datetime.now()
+
+# print(day.time())
+
+
+
 
  
-class Animal(Human):
-    pass
-
-obj1 = Animal('kiki','red',6.7)
-
-print(obj1.can_talk())
