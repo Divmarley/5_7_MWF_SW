@@ -736,4 +736,7 @@ Child class is the class that inherits from another class, also called derived c
 
 
 
- 
+
+from main import cal_age
+
+print(cal_age(2023,1997))
