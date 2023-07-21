@@ -736,7 +736,64 @@ Child class is the class that inherits from another class, also called derived c
 
 
 
+# Create Read Update Delete
 
-from main import cal_age
 
-print(cal_age(2023,1997))
+
+# data = open('demo.txt', 'r')
+# x = data.read()
+# print(x) 
+
+
+
+
+# data = open('demo.txt', 'r')
+# for i, line in enumerate(data,1):
+#     if i  == 3:
+#         print(line)
+#         break
+
+
+'''
+Write to an Existing File
+To write to an existing file, you must add a parameter to the open() function:
+
+"a" - Append - will append to the end of the file
+
+"w" - Write - will overwrite any existing content 
+'''
+
+# append mode 
+# myFile = open('demo.txt','a') 
+# myFile.write("hay people")
+# myFile.close()
+
+# myFile = open('demo.txt','r') 
+# print( myFile.read())
+# myFile.close()
+
+# write mode
+# myFile = open('demo.txt','w') 
+# myFile.write("hay people")
+# myFile.close()
+
+# myFile = open('demo.txt','r') 
+# print( myFile.read())
+# myFile.close()
+
+
+# Create a New File
+
+# myFile = open('demo.txt','w') 
+
+
+
+# Delete a File
+# To delete a file, 
+# you must import the OS module, and run its os.remove() function:
+
+import os
+
+
+os.makedirs("qwerty/layout/index.py")
+
