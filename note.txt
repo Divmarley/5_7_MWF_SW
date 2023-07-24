@@ -1,0 +1,22 @@
+pip list #check if virtualenv is installed 
+
+# if not installed
+
+pip install virtualenv
+
+
+
+to create virtual  environment
+
+virtualenv env
+
+or 
+python -m virtualenv env
+
+
+#create requirement.txt 
+pip freeze > requirement.txt
+
+
+# install all modules in requirement.txt file
+pip install -r requirement.txt
