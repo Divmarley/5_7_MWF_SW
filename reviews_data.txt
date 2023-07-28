@@ -1,0 +1,28 @@
+
+{
+    "id": 1,
+    "product_id": "PROD123",
+    "user_id": "USER456",
+    "rating": 4.5,
+    "title": "Great Product!",
+    "content": "I absolutely love this product. It's well-designed, easy to use, and performs excellently.",
+    "timestamp": "2023-07-28T12:34:56Z"
+},
+{
+    "id": 2,
+    "product_id": "PROD123",
+    "user_id": "USER789",
+    "rating": 3.8,
+    "title": "Good, but some issues",
+    "content": "The product works well most of the time, but occasionally I face some minor glitches.",
+    "timestamp": "2023-07-27T18:22:30Z"
+},
+{
+    "id": 3,
+    "product_id": "PROD456",
+    "user_id": "USER456",
+    "rating": 5.0,
+    "title": "Outstanding Service!",
+    "content": "The service provided by this company is outstanding. I had a wonderful experience.",
+    "timestamp": "2023-07-26T09:10:15Z"
+}
