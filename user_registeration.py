@@ -1,6 +1,7 @@
 # pip install mysql-connector-python
-
+# pip install bcrypt
 import mysql.connector 
+import bcrypt
 
 mydb =mysql.connector.connect(
     user="root",
@@ -25,11 +26,15 @@ name_data= input("enter your name :")
 email_data =input("enter your email :")
 password_data = input("enter your password :")
 
+ 
+
+salt = bcrypt.gensalt()
+hashed = bcrypt.hashpw(password_data.encode(), salt)
+
 
 def create_user():
     sql="INSERT INTO users(id, name, email, password) VALUES (%s,%s,%s,%s)"
-    val = id_data,name_data,email_data,password_data
-    print(val)
+    val = id_data,name_data,email_data,hashed
     myCursor.execute(sql,val)
 
     mydb.commit()
